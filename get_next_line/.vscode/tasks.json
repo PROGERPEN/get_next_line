@@ -1,0 +1,19 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+	"tasks": [
+		{
+			"label": "build",
+			"type": "shell",
+			"command": "gcc -O0 -g -Wall -Wextra -Werror  get_next_line.c get_next_line.h eval/libft.a -I eval/",
+			"problemMatcher": []
+		},
+		{
+			"label": "run",
+			"type": "shell",
+			"command": "gcc -Wall -Wextra -Werror  get_next_line.c get_next_line.h eval/libft.a -I eval/ && ./a.out test1",
+			"problemMatcher": []
+		}
+	],
+    }
